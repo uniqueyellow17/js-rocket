@@ -1,4 +1,7 @@
-var car = {
+var doCoolStuff = function () {
+  document.getElementById('cool').className = 'cool red';
+}
+var car.define = {
   make: 'VW',
   type: 'Polo',
   color: 'blue',
