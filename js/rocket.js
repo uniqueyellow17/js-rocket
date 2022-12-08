@@ -11,9 +11,10 @@ var changeState = function (state) {
         innerHTML = countdownNumber;
         countdownNumber = countdownNumber -1;
         if (countdownNumber <= 0) {
-          className
+          document.body.className = 'body-state'+
+          state;
         }
-    }, 1000);
+    }, 100);
 
   };
 }
