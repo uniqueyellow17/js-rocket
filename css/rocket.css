@@ -1,5 +1,5 @@
 .left {
-  background-color: lightyellow;
+  background-color: lemonchiffon;
   position: fixed;
   width: 50%;
   height: 100%;
@@ -8,7 +8,7 @@
 }
 
 .right {
-  background-color: lightblue;
+  background-color: lightskyblue;
   position: fixed;
   width: 50%;
   height: 100%;
@@ -17,7 +17,7 @@
 }
 
 .ground {
-  background-color: aliceblue;
+  background-color: snow;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -31,11 +31,56 @@
   bottom: 20px;
   width: 50px;
   height: 50px;
-  background-color: darkgreen;
+  background-color: darkolivegreen;
   transition: bottom 10000ms;
 }
+.leftEye {
+  position: absolute;
+  left: 10px;
+  bottom: 30px;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+.rightEye {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+.mouth {
+  position: absolute;
+  right: 13px;
+  bottom: 0px;
+  width: 25px;
+  height: 25px;
+  background-color: black;
+}
+.nose {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+.gap {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  width: 10px;
+  height: 10px;
+  background-color: darkolivegreen;
+}
 
-.rocket.flying {
+body.body-state1 .rocket{
+  transition: none;
+}
+
+body.body-state3 .rocket,
+body.body-state4 .rocket {
   bottom: 1000px;
 }
 
@@ -59,14 +104,13 @@ a{
   font-weight:bold;
 }
 a.button {
-  background: aquamarine;
-  padding: auto;
+  background: darkseagreen;
   color: red;
   height: 20px;
+  margin: auto;
 }
 
 h1 {
   font-style: italic;
-  font-family: cursive;
-  font: Sail
+  font-family: "Lucida Handwriting", cursive;
 }
